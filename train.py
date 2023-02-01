@@ -46,7 +46,7 @@ class ClipCocoDataset(Dataset):
             prefix = prefix / prefix.norm(2, -1)
         return tokens, mask, prefix
 
-    def __init__(self, data_path: str,  prefix_length: int, gpt2_type: str = "gpt2",
+    def __init__(self, data_path: str, prefix_length: int, gpt2_type: str = "gpt2",
                  normalize_prefix=False):
         self.tokenizer = GPT2Tokenizer.from_pretrained(gpt2_type)
         self.prefix_length = prefix_length
@@ -108,6 +108,7 @@ class MlpTransformer(nn.Module):
         x = self.fc2(x)
         x = self.dropout(x)
         return x
+
 
 class MultiHeadAttention(nn.Module):
 
@@ -174,7 +175,7 @@ class Transformer(nn.Module):
 
     def forward(self, x, y=None, mask=None):
         for i, layer in enumerate(self.layers):
-            if i % 2 == 0 and self.enc_dec: # cross
+            if i % 2 == 0 and self.enc_dec:  # cross
                 x = layer(x, y)
             elif self.enc_dec:  # self
                 x = layer(x, x, mask)
@@ -244,7 +245,7 @@ class ClipCaptionModel(nn.Module):
                                      self.gpt_embedding_size * prefix_length))
         else:
             self.clip_project = TransformerMapper(prefix_size, self.gpt_embedding_size, prefix_length,
-                                                                     clip_length, num_layers)
+                                                  clip_length, num_layers)
 
 
 class ClipCaptionPrefix(ClipCaptionModel):
@@ -290,7 +291,6 @@ def load_model(config_path: str, epoch_or_latest: Union[str, int] = '_latest'):
 
 def train(dataset: ClipCocoDataset, model: ClipCaptionModel, args,
           lr: float = 2e-5, warmup_steps: int = 5000, output_dir: str = ".", output_prefix: str = ""):
-
     device = torch.device('cuda:0')
     batch_size = args.bs
     epochs = args.epochs
@@ -360,7 +360,7 @@ def main():
         print("Train only prefix")
     else:
         model = ClipCaptionModel(prefix_length, clip_length=args.prefix_length_clip, prefix_size=prefix_dim,
-                                  num_layers=args.num_layers, mapping_type=args.mapping_type)
+                                 num_layers=args.num_layers, mapping_type=args.mapping_type)
         print("Train both prefix and GPT")
         sys.stdout.flush()
     train(dataset, model, args, output_dir=args.out_dir, output_prefix=args.prefix)

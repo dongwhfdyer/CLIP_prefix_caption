@@ -117,7 +117,7 @@ class ClipCaptionModel(nn.Module):
         )
 
     def forward(
-        self, tokens: T, prefix: T, mask: Optional[T] = None, labels: Optional[T] = None
+            self, tokens: T, prefix: T, mask: Optional[T] = None, labels: Optional[T] = None
     ):
         embedding_text = self.gpt.transformer.wte(tokens)
         prefix_projections = self.clip_project(prefix).view(
@@ -162,16 +162,15 @@ class ClipCaptionPrefix(ClipCaptionModel):
 
 
 def generate_beam(
-    model,
-    tokenizer,
-    beam_size: int = 5,
-    prompt=None,
-    embed=None,
-    entry_length=67,
-    temperature=1.0,
-    stop_token: str = ".",
+        model,
+        tokenizer,
+        beam_size: int = 5,
+        prompt=None,
+        embed=None,
+        entry_length=67,
+        temperature=1.0,
+        stop_token: str = ".",
 ):
-
     model.eval()
     stop_token_index = tokenizer.encode(stop_token)[0]
     tokens = None
@@ -238,16 +237,16 @@ def generate_beam(
 
 
 def generate2(
-    model,
-    tokenizer,
-    tokens=None,
-    prompt=None,
-    embed=None,
-    entry_count=1,
-    entry_length=67,  # maximum number of words
-    top_p=0.8,
-    temperature=1.0,
-    stop_token: str = ".",
+        model,
+        tokenizer,
+        tokens=None,
+        prompt=None,
+        embed=None,
+        entry_count=1,
+        entry_length=67,  # maximum number of words
+        top_p=0.8,
+        temperature=1.0,
+        stop_token: str = ".",
 ):
     model.eval()
     generated_num = 0
@@ -279,8 +278,8 @@ def generate2(
                 )
                 sorted_indices_to_remove = cumulative_probs > top_p
                 sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[
-                    ..., :-1
-                ].clone()
+                                                    ..., :-1
+                                                    ].clone()
                 sorted_indices_to_remove[..., 0] = 0
 
                 indices_to_remove = sorted_indices[sorted_indices_to_remove]
