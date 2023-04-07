@@ -1,42 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a415713-6726-4f73-a813-88033a52fffd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+    <list default="true" id="7a415713-6726-4f73-a813-88033a52fffd" name="Default Changelist" comment="# Title: Summary, imperative, start upper case, don't end with a period&#10;# No more than 50 chars. #### 50 chars is here:  #&#10;&#10;# Remember blank line between title and body.&#10;&#10;# Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).&#10;# Wrap at 72 chars. ################################## which is here:  #&#10;&#10;&#10;# At the end: Include Co-authored-by for all contributors. &#10;# Include at least one empty line before it. Format: &#10;# Co-authored-by: name &lt;user@users.noreply.github.com&gt;&#10;#&#10;# How to Write a Git Commit Message:&#10;# https://chris.beams.io/posts/git-commit/&#10;#&#10;# 1. Separate subject from body with a blank line&#10;# 2. Limit the subject line to 50 characters&#10;# 3. Capitalize the subject line&#10;# 4. Do not end the subject line with a period&#10;# 5. Use the imperative mood in the subject line&#10;# 6. Wrap the body at 72 characters&#10;# 7. Use the body to explain what and why vs. how&#10;#&#10;# kuhn's template">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse_coco.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,6 +35,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -79,6 +53,7 @@
     <option name="width" value="1334" />
     <option name="height" value="721" />
   </component>
+  <component name="ProjectId" id="2L8849GzoTC309aVyJhk7OE1YZN" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -98,24 +73,18 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -128,7 +97,34 @@
       <updated>1631795510237</updated>
       <workItem from="1631795514442" duration="3308000" />
       <workItem from="1632492645974" duration="907000" />
+      <workItem from="1675241159347" duration="922000" />
+      <workItem from="1675332992040" duration="2435000" />
+      <workItem from="1675597223936" duration="719000" />
+      <workItem from="1675682744500" duration="672000" />
+      <workItem from="1675759599070" duration="2818000" />
+      <workItem from="1675854230678" duration="1250000" />
+      <workItem from="1675865217636" duration="599000" />
+      <workItem from="1675924228616" duration="1306000" />
+      <workItem from="1676423363532" duration="515000" />
+      <workItem from="1676513542043" duration="1260000" />
+      <workItem from="1676945019757" duration="658000" />
+      <workItem from="1677118467946" duration="33000" />
+      <workItem from="1677550476677" duration="6000" />
+      <workItem from="1678409479692" duration="3403000" />
+      <workItem from="1678499323256" duration="609000" />
+      <workItem from="1678592274267" duration="660000" />
+      <workItem from="1678623894578" duration="1197000" />
+      <workItem from="1678664324050" duration="595000" />
+      <workItem from="1679117312450" duration="2538000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1675241208240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675241208240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -163,7 +159,22 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/parse_coco.py">
